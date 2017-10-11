@@ -1,0 +1,8 @@
+myapp:
+  image: alpine:latest
+  stdin_open: true
+  tty: true
+  entrypoint: /bin/sh
+  volumes:
+    - /:/root
+  
