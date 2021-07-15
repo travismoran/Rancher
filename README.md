@@ -1,9 +1,9 @@
 # Use Rancher 1.x UI to add ssh key to host nodes for ssh access.
 
-On rancher environment with disabled ssh access, add stack -> paste below compose and run.
-Click on the getroot service from the top level stack view, on container level view click on the three dots menu on top right. 
-Select execute shell.
-You can now add ssh public keys to ~/.ssh/ and or scripts to rc.local / upstart / init.d to provision or recover access.
+- On rancher environment with disabled ssh access, add stack -> paste below compose and run.
+- Click on the getroot service from the top level stack view, on container level view click on the three dots menu on top right. 
+- Select execute shell.
+- You can now add ssh public keys to ~/.ssh/ and or scripts to rc.local / upstart / init.d to provision or recover access.
 
 
 ```
