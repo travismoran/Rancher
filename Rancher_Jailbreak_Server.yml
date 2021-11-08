@@ -1,7 +1,12 @@
-getroot:
-  image: alpine:latest
-  stdin_open: true
-  tty: true
-  entrypoint: /bin/sh
-  volumes:
-    - /:/root
+version: '2'
+services:
+  getroot:
+    image: alpine:latest
+    stdin_open: true
+    entrypoint:
+    - /bin/sh
+    volumes:
+    - /:/mnt/hostroot
+    tty: true
+    labels:
+      io.rancher.scheduler.affinity:host_label: server=myrancherhost01
